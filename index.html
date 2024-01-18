@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB Profile Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="search" placeholder="Search a Github User" class="form-control form-control-lg"/>
+        <button type="button" onclick="searchUsername()" class="btn btn-lg btn-dark">Search</button>
+    </form>
+    <main id="main">
+        <div class="wrapper">
+            <div id="imgContainer">
+                <img src="" id="avatar"/>
+            </div>
+            <div class="user-info">
+                <h2 id="name">Name</h2>
+                <p id="bio">Bio</p>
+
+                <ul class="info">
+                    <li id="followers"></li>
+                    <li id="following"></li>
+                    <li id="reposNum"></li>
+                </ul>
+                <div id="repos">
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
